@@ -1,13 +1,13 @@
 import * as encoding from "@oslojs/encoding";
 
-export class ActionInvocationRequestResolver {
+export class Server {
 	public actions: Actions;
 
 	constructor(actions: Actions) {
 		this.actions = actions;
 	}
 
-	public async resolveRequest(body: string): Promise<string> {
+	public async resolveActionInvocationEndpointRequest(body: string): Promise<string> {
 		const parsed = JSON.parse(body);
 
 		if (typeof parsed !== "object" || parsed === null) {

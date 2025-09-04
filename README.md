@@ -1,4 +1,6 @@
-# Faroe user server JavaScript library
+# @faroe/user-server
+
+Package for building Faroe user servers.
 
 ## Overview
 
@@ -97,16 +99,16 @@ export interface Actions {
 }
 ```
 
-### ActionInvocationRequestResolver
+### Server
 
 ```ts
 function constructor(actions: Actions);
 ```
 
-The `resolveRequest()` method takes an action invocation endpoint request body and returns a response body for a 200 response. It will throw an `Error` if the request is invalid.
+The `resolveActionInvocationEndpointRequest()` method takes an action invocation endpoint request body and returns a response body for a 200 response. It will throw an `Error` if the request is invalid.
 
 ```ts
-async function resolveRequest(body: string): Promise<string>;
+async function resolveActionInvocationEndpointRequest(body: string): Promise<string>;
 ```
 
 ### ActionError
