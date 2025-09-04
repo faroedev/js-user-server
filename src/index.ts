@@ -414,7 +414,8 @@ export class Server {
 
 		const resultJSONObject = {
 			ok: true,
-			action_invocation_id: actionInvocationId
+			action_invocation_id: actionInvocationId,
+			values: {}
 		};
 
 		const resultJSON = JSON.stringify(resultJSONObject);
