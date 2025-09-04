@@ -135,18 +135,20 @@ export class Server {
 		const resultJSONObject = {
 			ok: true,
 			action_invocation_id: actionInvocationId,
-			user: {
-				id: user.id,
-				email_address: user.emailAddress,
-				password_hash: encoding.encodeBase64(user.passwordHash),
-				password_hash_algorithm_id: user.passwordHashAlgorithmId,
-				password_salt: encoding.encodeBase64(user.passwordSalt),
-				disabled: user.disabled,
-				display_name: user.displayName,
-				email_address_counter: user.emailAddressCounter,
-				password_hash_counter: user.passwordHashCounter,
-				disabled_counter: user.disabledCounter,
-				sessions_counter: user.sessionsCounter
+			values: {
+				user: {
+					id: user.id,
+					email_address: user.emailAddress,
+					password_hash: encoding.encodeBase64(user.passwordHash),
+					password_hash_algorithm_id: user.passwordHashAlgorithmId,
+					password_salt: encoding.encodeBase64(user.passwordSalt),
+					disabled: user.disabled,
+					display_name: user.displayName,
+					email_address_counter: user.emailAddressCounter,
+					password_hash_counter: user.passwordHashCounter,
+					disabled_counter: user.disabledCounter,
+					sessions_counter: user.sessionsCounter
+				}
 			}
 		};
 
@@ -178,18 +180,20 @@ export class Server {
 		const resultJSONObject = {
 			ok: true,
 			action_invocation_id: actionInvocationId,
-			user: {
-				id: user.id,
-				email_address: user.emailAddress,
-				password_hash: encoding.encodeBase64(user.passwordHash),
-				password_hash_algorithm_id: user.passwordHashAlgorithmId,
-				password_salt: encoding.encodeBase64(user.passwordSalt),
-				disabled: user.disabled,
-				display_name: user.displayName,
-				email_address_counter: user.emailAddressCounter,
-				password_hash_counter: user.passwordHashCounter,
-				disabled_counter: user.disabledCounter,
-				sessions_counter: user.sessionsCounter
+			values: {
+				user: {
+					id: user.id,
+					email_address: user.emailAddress,
+					password_hash: encoding.encodeBase64(user.passwordHash),
+					password_hash_algorithm_id: user.passwordHashAlgorithmId,
+					password_salt: encoding.encodeBase64(user.passwordSalt),
+					disabled: user.disabled,
+					display_name: user.displayName,
+					email_address_counter: user.emailAddressCounter,
+					password_hash_counter: user.passwordHashCounter,
+					disabled_counter: user.disabledCounter,
+					sessions_counter: user.sessionsCounter
+				}
 			}
 		};
 
@@ -224,18 +228,20 @@ export class Server {
 		const resultJSONObject = {
 			ok: true,
 			action_invocation_id: actionInvocationId,
-			user: {
-				id: user.id,
-				email_address: user.emailAddress,
-				password_hash: encoding.encodeBase64(user.passwordHash),
-				password_hash_algorithm_id: user.passwordHashAlgorithmId,
-				password_salt: encoding.encodeBase64(user.passwordSalt),
-				disabled: user.disabled,
-				display_name: user.displayName,
-				email_address_counter: user.emailAddressCounter,
-				password_hash_counter: user.passwordHashCounter,
-				disabled_counter: user.disabledCounter,
-				sessions_counter: user.sessionsCounter
+			values: {
+				user: {
+					id: user.id,
+					email_address: user.emailAddress,
+					password_hash: encoding.encodeBase64(user.passwordHash),
+					password_hash_algorithm_id: user.passwordHashAlgorithmId,
+					password_salt: encoding.encodeBase64(user.passwordSalt),
+					disabled: user.disabled,
+					display_name: user.displayName,
+					email_address_counter: user.emailAddressCounter,
+					password_hash_counter: user.passwordHashCounter,
+					disabled_counter: user.disabledCounter,
+					sessions_counter: user.sessionsCounter
+				}
 			}
 		};
 
@@ -289,7 +295,8 @@ export class Server {
 
 		const resultJSONObject = {
 			ok: true,
-			action_invocation_id: actionInvocationId
+			action_invocation_id: actionInvocationId,
+			values: {}
 		};
 
 		const resultJSON = JSON.stringify(resultJSONObject);
@@ -360,7 +367,8 @@ export class Server {
 
 		const resultJSONObject = {
 			ok: true,
-			action_invocation_id: actionInvocationId
+			action_invocation_id: actionInvocationId,
+			values: {}
 		};
 
 		const resultJSON = JSON.stringify(resultJSONObject);
@@ -435,7 +443,8 @@ export class Server {
 
 		const resultJSONObject = {
 			ok: true,
-			action_invocation_id: actionInvocationId
+			action_invocation_id: actionInvocationId,
+			values: {}
 		};
 
 		const resultJSON = JSON.stringify(resultJSONObject);
